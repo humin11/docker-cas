@@ -1,6 +1,7 @@
 FROM panoptix/ubuntu:jdk
 
 MAINTAINER Stephan Buys <stephan.buys@panoptix.co.za>
+ENV REFRESHED_ON "29 Jan 2015"
 
 RUN apt-get update && apt-get install -y tomcat7 ldap-utils -qq
 RUN apt-get install -y maven git
